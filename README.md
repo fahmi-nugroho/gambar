@@ -86,6 +86,15 @@ Saya menggunakan dua pendekatan dalam membuat model machine learning untuk menye
     RF.fit(X_train, y_train)
     y_pred_RF=RF.predict(X_test)
     ```
+Hasil Evaluasi K-Nearest Neighbor
+
+![Evaluasi KNN](https://github.com/fahmi-nugroho/gambar/blob/main/gambar5.png)
+
+Hasil Evaluasi Random Forest
+
+![Evaluasi RF](https://github.com/fahmi-nugroho/gambar/blob/main/gambar6.png)
+
+Menurut gambar hasil evaluasi diatas dapat dilihat bahwa model K-Nearest Neighbor memiliki akurasi sebesar 0.9473684210526315 sedangkan untuk model Random Forest memiliki akurasi sebesar 0.9385964912280702. Maka dapat disimpulkan dari dua model yang saya buat K-Nearest Neighbor merupakan model yang memiliki akurasi paling tinggi dan cocok untuk dijadikan solusi untuk masalah klasifikasi kanker paryudara.
 
 ## Evaluation
 Untuk menilai performa model saya menggunakan tiga metrik evaluasi. Saya memilih ketiga metrik dibawah karena masalah yang saya selesaikan merupakan masalah klasifikasi.
@@ -126,11 +135,3 @@ Kode yang saya gunakan untuk mengevaluasi model:
     print('=> Accuracy Score')
     print(accuracy_score(y_test, y_pred_RF))
     ```
-
-Hasil Evaluasi K-Nearest Neighbor
-
-![Evaluasi KNN](https://github.com/fahmi-nugroho/gambar/blob/main/gambar5.png)
-
-Hasil Evaluasi Random Forest
-
-![Evaluasi RF](https://github.com/fahmi-nugroho/gambar/blob/main/gambar6.png)
