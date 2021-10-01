@@ -32,15 +32,19 @@ Data yang saya gunakan merupakan data Breast Cancer Wisconsin (Diagnostic) Data 
 Masing-masing fitur diatas (kecuali diagnosis) memliki 3 jenis, yaitu rata-rata, standar eror, dan rata-rata terbesar (worst). Contohnya radius_mean, radius_se, dan radius_worst.
 
 Data diagnosis
+
 ![Visualisasi Diagnosis](https://github.com/fahmi-nugroho/gambar/blob/main/gambar4.png)
 
 Data untuk rata-rata (mean)
+
 ![Visualisasi Dataset Rata-Rata](https://github.com/fahmi-nugroho/gambar/blob/main/gambar1.png)
 
 Data untuk standar eror (se)
+
 ![Visualisasi Dataset Standar Eror](https://github.com/fahmi-nugroho/gambar/blob/main/gambar2.png)
 
 Data untuk rata-rata terbesar (worst)
+
 ![Visualisasi Dataset Rata-Rata Terbesar](https://github.com/fahmi-nugroho/gambar/blob/main/gambar3.png)
 
 ## Data Preparation
@@ -87,20 +91,19 @@ Saya menggunakan dua pendekatan dalam membuat model machine learning untuk menye
 Untuk menilai performa model saya menggunakan tiga metrik evaluasi. Saya memilih ketiga metrik dibawah karena masalah yang saya selesaikan merupakan masalah klasifikasi.
 * Confussion Matrix
 Confusion matrix juga sering disebut error matrix. Pada dasarnya confusion matrix memberikan informasi perbandingan hasil klasifikasi yang dilakukan oleh sistem (model) dengan hasil klasifikasi sebenarnya. Confusion matrix berbentuk tabel matriks yang menggambarkan kinerja model klasifikasi pada serangkaian data uji yang nilai sebenarnya diketahui.
-![Tabel Confussion Matrix](https://github.com/fahmi-nugroho/gambar/blob/main/convusionmatrix.png)
+
+![Tabel Confussion Matrix](https://github.com/fahmi-nugroho/gambar/blob/main/confussionmatrix.png)
 * Classfication Report
     * Precission
-![Precission](https://github.com/fahmi-nugroho/gambar/blob/main/precision.png)
-Precission adalah kemampuan pengklasifikasi untuk tidak melabeli instance positif yang sebenarnya negatif. Untuk setiap kelas, itu didefinisikan sebagai rasio positif benar dengan jumlah positif benar dan positif palsu.
+Precission adalah kemampuan pengklasifikasi untuk tidak melabeli instance positif yang sebenarnya negatif. Untuk setiap kelas, itu didefinisikan sebagai rasio positif benar dengan jumlah positif benar dan positif palsu. ![Precission](https://github.com/fahmi-nugroho/gambar/blob/main/precision.png)
     * Recall
-![Precission](https://github.com/fahmi-nugroho/gambar/blob/main/recall.png)
-Recall adalah kemampuan classifier untuk menemukan semua instance positif. Untuk setiap kelas itu didefinisikan sebagai rasio positif benar dengan jumlah positif benar dan negatif palsu.
+Recall adalah kemampuan classifier untuk menemukan semua instance positif. Untuk setiap kelas itu didefinisikan sebagai rasio positif benar dengan jumlah positif benar dan negatif palsu. ![Precission](https://github.com/fahmi-nugroho/gambar/blob/main/recall.png)
     * F1 Score
-![Precission](https://github.com/fahmi-nugroho/gambar/blob/main/f1.png)
-F1 Score adalah rata-rata harmonik tertimbang dari presisi dan daya ingat sehingga skor terbaik adalah 1,0 dan yang terburuk adalah 0,0. F1 Score lebih rendah dari ukuran akurasi karena mereka menanamkan presisi dan mengingat ke dalam perhitungan mereka. Sebagai aturan praktis, rata-rata tertimbang F1 harus digunakan untuk membandingkan model pengklasifikasi, bukan akurasi global.
+F1 Score adalah rata-rata harmonik tertimbang dari presisi dan daya ingat sehingga skor terbaik adalah 1,0 dan yang terburuk adalah 0,0. F1 Score lebih rendah dari ukuran akurasi karena mereka menanamkan presisi dan mengingat ke dalam perhitungan mereka. Sebagai aturan praktis, rata-rata tertimbang F1 harus digunakan untuk membandingkan model pengklasifikasi, bukan akurasi global. ![Precission](https://github.com/fahmi-nugroho/gambar/blob/main/f1.png)
     * Support
 Support adalah jumlah kemunculan aktual kelas dalam kumpulan data yang ditentukan. Support yang tidak seimbang dalam data pelatihan dapat menunjukkan kelemahan struktural dalam skor pengklasifikasi yang dilaporkan dan dapat menunjukkan perlunya pengambilan sampel bertingkat atau penyeimbangan kembali. Support tidak berubah antar model melainkan mendiagnosis proses evaluasi.
 * Accuracy Score
+
 ![Accuracy](https://github.com/fahmi-nugroho/gambar/blob/main/accuracy.png)
 
 Kode yang saya gunakan untuk mengevaluasi model:
@@ -125,7 +128,9 @@ Kode yang saya gunakan untuk mengevaluasi model:
     ```
 
 Hasil Evaluasi K-Nearest Neighbor
+
 ![Evaluasi KNN](https://github.com/fahmi-nugroho/gambar/blob/main/gambar5.png)
 
 Hasil Evaluasi Random Forest
+
 ![Evaluasi RF](https://github.com/fahmi-nugroho/gambar/blob/main/gambar6.png)
